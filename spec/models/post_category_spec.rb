@@ -1,5 +1,8 @@
-# require 'rails_helper'
-#
-# RSpec.describe PostCategory, type: :model do
-#   pending "add some examples to (or delete) #{__FILE__}"
-# end
+require 'rails_helper'
+
+RSpec.describe PostCategory, type: :model do
+  
+  it 'belongs to a category' do
+    expect(@pp.category).to be(@mcdreamy)
+  end
+end
